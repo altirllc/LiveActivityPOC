@@ -17,6 +17,14 @@
 		06CD00982CF5DABC004DC7F6 /* ChargeTrackerAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CD00972CF5DABC004DC7F6 /* ChargeTrackerAttributes.swift */; };
 		06CD009B2CF6059F004DC7F6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CD009A2CF6059F004DC7F6 /* Constants.swift */; };
 		06CD009D2CF606AE004DC7F6 /* ExpandedUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CD009C2CF606AE004DC7F6 /* ExpandedUI.swift */; };
+		06CD00A12CF61B0F004DC7F6 /* ChargeTrackerModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CD009F2CF61B0F004DC7F6 /* ChargeTrackerModule.swift */; };
+		06CD00A32CF623BF004DC7F6 /* ChargeTrackerModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 06CD00A22CF623BF004DC7F6 /* ChargeTrackerModule.m */; };
+		06CD00A52CF634D7004DC7F6 /* ChargeTrackerAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CD00972CF5DABC004DC7F6 /* ChargeTrackerAttributes.swift */; };
+		06CD00A62CF634DA004DC7F6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CD009A2CF6059F004DC7F6 /* Constants.swift */; };
+		06CD00A82CF63C48004DC7F6 /* ExpandedUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CD009C2CF606AE004DC7F6 /* ExpandedUI.swift */; };
+		06CD00A92CF63C5E004DC7F6 /* ChargeTrackerModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CD009F2CF61B0F004DC7F6 /* ChargeTrackerModule.swift */; };
+		06CD00AD2CF64315004DC7F6 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CD00AC2CF64315004DC7F6 /* NetworkService.swift */; };
+		06CD00AE2CF64364004DC7F6 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CD00AC2CF64315004DC7F6 /* NetworkService.swift */; };
 		0C80B921A6F3F58F76C31292 /* libPods-LiveActivityPOC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-LiveActivityPOC.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -71,6 +79,10 @@
 		06CD00992CF601DC004DC7F6 /* LiveActivityPOC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = LiveActivityPOC.entitlements; path = LiveActivityPOC/LiveActivityPOC.entitlements; sourceTree = "<group>"; };
 		06CD009A2CF6059F004DC7F6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		06CD009C2CF606AE004DC7F6 /* ExpandedUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedUI.swift; sourceTree = "<group>"; };
+		06CD009F2CF61B0F004DC7F6 /* ChargeTrackerModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeTrackerModule.swift; sourceTree = "<group>"; };
+		06CD00A22CF623BF004DC7F6 /* ChargeTrackerModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChargeTrackerModule.m; sourceTree = "<group>"; };
+		06CD00AB2CF63EB2004DC7F6 /* LiveActivityPOC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LiveActivityPOC-Bridging-Header.h"; sourceTree = "<group>"; };
+		06CD00AC2CF64315004DC7F6 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* LiveActivityPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveActivityPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = LiveActivityPOC/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = LiveActivityPOC/AppDelegate.mm; sourceTree = "<group>"; };
@@ -136,6 +148,7 @@
 		06CD00862CF5D68F004DC7F6 /* ChargeTracker */ = {
 			isa = PBXGroup;
 			children = (
+				06CD00AB2CF63EB2004DC7F6 /* LiveActivityPOC-Bridging-Header.h */,
 				06CD00872CF5D68F004DC7F6 /* ChargeTrackerBundle.swift */,
 				06CD00892CF5D68F004DC7F6 /* ChargeTrackerLiveActivity.swift */,
 				06CD008D2CF5D690004DC7F6 /* Assets.xcassets */,
@@ -143,6 +156,9 @@
 				06CD00972CF5DABC004DC7F6 /* ChargeTrackerAttributes.swift */,
 				06CD009A2CF6059F004DC7F6 /* Constants.swift */,
 				06CD009C2CF606AE004DC7F6 /* ExpandedUI.swift */,
+				06CD009F2CF61B0F004DC7F6 /* ChargeTrackerModule.swift */,
+				06CD00A22CF623BF004DC7F6 /* ChargeTrackerModule.m */,
+				06CD00AC2CF64315004DC7F6 /* NetworkService.swift */,
 			);
 			path = ChargeTracker;
 			sourceTree = "<group>";
@@ -299,7 +315,7 @@
 						CreatedOnToolsVersion = 15.2;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1520;
 					};
 				};
 			};
@@ -515,9 +531,11 @@
 			files = (
 				06CD00882CF5D68F004DC7F6 /* ChargeTrackerBundle.swift in Sources */,
 				06CD00982CF5DABC004DC7F6 /* ChargeTrackerAttributes.swift in Sources */,
+				06CD00A12CF61B0F004DC7F6 /* ChargeTrackerModule.swift in Sources */,
 				06CD009D2CF606AE004DC7F6 /* ExpandedUI.swift in Sources */,
 				06CD008A2CF5D68F004DC7F6 /* ChargeTrackerLiveActivity.swift in Sources */,
 				06CD009B2CF6059F004DC7F6 /* Constants.swift in Sources */,
+				06CD00AE2CF64364004DC7F6 /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,8 +543,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06CD00A52CF634D7004DC7F6 /* ChargeTrackerAttributes.swift in Sources */,
+				06CD00A32CF623BF004DC7F6 /* ChargeTrackerModule.m in Sources */,
+				06CD00AD2CF64315004DC7F6 /* NetworkService.swift in Sources */,
+				06CD00A82CF63C48004DC7F6 /* ExpandedUI.swift in Sources */,
+				06CD00A92CF63C5E004DC7F6 /* ChargeTrackerModule.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				06CD00A62CF634DA004DC7F6 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,6 +574,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-LiveActivityPOC-LiveActivityPOCTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -577,6 +602,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-LiveActivityPOC-LiveActivityPOCTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = LiveActivityPOCTests/Info.plist;
@@ -633,6 +659,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -675,6 +702,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -704,7 +732,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = LiveActivityPOC;
+				SWIFT_OBJC_BRIDGING_HEADER = "ChargeTracker/LiveActivityPOC-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -733,6 +763,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = LiveActivityPOC;
+				SWIFT_OBJC_BRIDGING_HEADER = "ChargeTracker/LiveActivityPOC-Bridging-Header.h";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -808,6 +840,7 @@
 				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "ChargeTracker/LiveActivityPOC-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -873,6 +906,7 @@
 				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "ChargeTracker/LiveActivityPOC-Bridging-Header.h";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

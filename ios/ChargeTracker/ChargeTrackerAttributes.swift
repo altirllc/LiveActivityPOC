@@ -15,11 +15,11 @@ struct ChargeTrackerAttributes: ActivityAttributes {
       struct ChargeInfo: Codable, Hashable {
         let percent: Double
         let chargeRate: Double
-        let amount: Double
       }
       let chargeInfo: ChargeInfo;
     }
 
     // Fixed non-changing properties about your activity go here!
     var recordID: Int;
+    var authToken: String;
 }

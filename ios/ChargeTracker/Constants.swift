@@ -21,3 +21,7 @@ extension Color {
         )
     }
 }
+
+var widgetUrl: String {
+      return "livechatpoc://live-activity"
+}

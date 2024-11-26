@@ -1,65 +1,55 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
-
 import React from 'react';
-import type {PropsWithChildren} from 'react';
 import {
   SafeAreaView,
   ScrollView,
   StatusBar,
   StyleSheet,
   Text,
+  TouchableOpacity,
   useColorScheme,
-  View,
 } from 'react-native';
 
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+import {Colors} from 'react-native/Libraries/NewAppScreen';
 
-type SectionProps = PropsWithChildren<{
-  title: string;
-}>;
+import {NativeModules} from 'react-native';
 
-function Section({children, title}: SectionProps): JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
-  return (
-    <View style={styles.sectionContainer}>
-      <Text
-        style={[
-          styles.sectionTitle,
-          {
-            color: isDarkMode ? Colors.white : Colors.black,
-          },
-        ]}>
-        {title}
-      </Text>
-      <Text
-        style={[
-          styles.sectionDescription,
-          {
-            color: isDarkMode ? Colors.light : Colors.dark,
-          },
-        ]}>
-        {children}
-      </Text>
-    </View>
-  );
-}
+const ChargeTrackerModule = NativeModules.ChargeTrackerModule;
 
 function App(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
+  };
+
+  const onStart = () => {
+    ChargeTrackerModule.startLiveActivity(10, 45, 'efer2bsdbbsw72');
+  };
+
+  const onUpdate = () => {
+    ChargeTrackerModule.updateLiveActivity(
+      20,
+      46,
+      ChargeTrackerModule.recordID,
+    );
+  };
+
+  const onStopImmediate = () => {
+    ChargeTrackerModule.stopLiveActivity(
+      true,
+      100,
+      46,
+      ChargeTrackerModule.recordID,
+    );
+  };
+
+  const onStopDefault = () => {
+    ChargeTrackerModule.stopLiveActivity(
+      false,
+      100,
+      46,
+      ChargeTrackerModule.recordID,
+    );
   };
 
   return (
@@ -70,48 +60,45 @@ function App(): JSX.Element {
       />
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-        <Header />
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.tsx</Text> to change this
-            screen and then come back to see your edits.
-          </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks />
-        </View>
+        style={[backgroundStyle, {paddingTop: 100}]}>
+        <TouchableOpacity style={styles.buttonContainer} onPress={onStart}>
+          <Text style={styles.text}>Start Live Activity</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={styles.buttonContainer} onPress={onUpdate}>
+          <Text style={styles.text}>Update Live Activity</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity
+          style={styles.buttonContainer}
+          onPress={onStopImmediate}>
+          <Text style={styles.text}>Stop Live Activity .Immediately</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity
+          style={styles.buttonContainer}
+          onPress={onStopDefault}>
+          <Text style={styles.text}>Stop Live Activity .default</Text>
+        </TouchableOpacity>
       </ScrollView>
     </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
+  buttonContainer: {
+    paddingVertical: 20,
+    paddingHorizontal: 20,
+    backgroundColor: 'black',
+    marginBottom: 20,
+    width: '70%',
+    alignSelf: 'center',
+    borderRadius: 20,
   },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
+  text: {
+    color: 'white',
+    fontSize: 17,
+    textAlign: 'center',
   },
 });
 

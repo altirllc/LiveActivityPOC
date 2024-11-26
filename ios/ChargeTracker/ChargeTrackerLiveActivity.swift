@@ -31,7 +31,9 @@ struct ChargeTrackerLiveActivity: Widget {
             percent: context.state.chargeInfo.percent,
             recordID: context.attributes.recordID,
             isLockScreenView: true
-          ).padding(.all, 20)
+          )
+          .padding(.all, 20)
+          .widgetURL(URL(string: widgetUrl))
         } dynamicIsland: { context in
             DynamicIsland {
                 // Expanded UI goes here
@@ -46,7 +48,7 @@ struct ChargeTrackerLiveActivity: Widget {
             } minimal: {
                 Text("\(Int(context.state.chargeInfo.percent))%")
             }
-            .widgetURL(URL(string: "http://www.apple.com"))
+            .widgetURL(URL(string: widgetUrl))
             .keylineTint(Color.white)
         }
     }
@@ -61,7 +63,7 @@ extension ChargeTrackerAttributes {
 extension ChargeTrackerAttributes.ContentState {
   fileprivate static var sample: ChargeTrackerAttributes.ContentState {
     let chargeInfo = ChargeTrackerAttributes.ContentState.ChargeInfo(
-         percent: 10, chargeRate: 20, amount: 30
+         percent: 10, chargeRate: 20
        )
     return ChargeTrackerAttributes.ContentState(chargeInfo: chargeInfo)
   }
