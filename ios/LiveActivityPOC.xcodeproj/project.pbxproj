@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* LiveActivityPOCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* LiveActivityPOCTests.m */; };
+		0624A5FA2CF6F78F009DB065 /* ChargeTrackerLiveActivityIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624A5F92CF6F78F009DB065 /* ChargeTrackerLiveActivityIntent.swift */; };
+		0624A5FB2CF6F78F009DB065 /* ChargeTrackerLiveActivityIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624A5F92CF6F78F009DB065 /* ChargeTrackerLiveActivityIntent.swift */; };
+		0624A5FD2CF719C7009DB065 /* ChargeTrackerEventEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624A5FC2CF719C7009DB065 /* ChargeTrackerEventEmitter.swift */; };
+		0624A6072CF71C0C009DB065 /* ChargeTrackerEventEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0624A6062CF71C0C009DB065 /* ChargeTrackerEventEmitter.m */; };
 		06CD00832CF5D68F004DC7F6 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06CD00822CF5D68F004DC7F6 /* WidgetKit.framework */; };
 		06CD00852CF5D68F004DC7F6 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06CD00842CF5D68F004DC7F6 /* SwiftUI.framework */; };
 		06CD00882CF5D68F004DC7F6 /* ChargeTrackerBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CD00872CF5D68F004DC7F6 /* ChargeTrackerBundle.swift */; };
@@ -68,6 +72,9 @@
 		00E356EE1AD99517003FC87E /* LiveActivityPOCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveActivityPOCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* LiveActivityPOCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiveActivityPOCTests.m; sourceTree = "<group>"; };
+		0624A5F92CF6F78F009DB065 /* ChargeTrackerLiveActivityIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeTrackerLiveActivityIntent.swift; sourceTree = "<group>"; };
+		0624A5FC2CF719C7009DB065 /* ChargeTrackerEventEmitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeTrackerEventEmitter.swift; sourceTree = "<group>"; };
+		0624A6062CF71C0C009DB065 /* ChargeTrackerEventEmitter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChargeTrackerEventEmitter.m; sourceTree = "<group>"; };
 		06CD00812CF5D68F004DC7F6 /* ChargeTrackerExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ChargeTrackerExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		06CD00822CF5D68F004DC7F6 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		06CD00842CF5D68F004DC7F6 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -159,6 +166,9 @@
 				06CD009F2CF61B0F004DC7F6 /* ChargeTrackerModule.swift */,
 				06CD00A22CF623BF004DC7F6 /* ChargeTrackerModule.m */,
 				06CD00AC2CF64315004DC7F6 /* NetworkService.swift */,
+				0624A5F92CF6F78F009DB065 /* ChargeTrackerLiveActivityIntent.swift */,
+				0624A5FC2CF719C7009DB065 /* ChargeTrackerEventEmitter.swift */,
+				0624A6062CF71C0C009DB065 /* ChargeTrackerEventEmitter.m */,
 			);
 			path = ChargeTracker;
 			sourceTree = "<group>";
@@ -313,6 +323,7 @@
 					};
 					06CD00802CF5D68F004DC7F6 = {
 						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
 					};
 					13B07F861A680F5B00A75B9A = {
 						LastSwiftMigration = 1520;
@@ -534,6 +545,7 @@
 				06CD00A12CF61B0F004DC7F6 /* ChargeTrackerModule.swift in Sources */,
 				06CD009D2CF606AE004DC7F6 /* ExpandedUI.swift in Sources */,
 				06CD008A2CF5D68F004DC7F6 /* ChargeTrackerLiveActivity.swift in Sources */,
+				0624A5FB2CF6F78F009DB065 /* ChargeTrackerLiveActivityIntent.swift in Sources */,
 				06CD009B2CF6059F004DC7F6 /* Constants.swift in Sources */,
 				06CD00AE2CF64364004DC7F6 /* NetworkService.swift in Sources */,
 			);
@@ -547,9 +559,12 @@
 				06CD00A32CF623BF004DC7F6 /* ChargeTrackerModule.m in Sources */,
 				06CD00AD2CF64315004DC7F6 /* NetworkService.swift in Sources */,
 				06CD00A82CF63C48004DC7F6 /* ExpandedUI.swift in Sources */,
+				0624A5FA2CF6F78F009DB065 /* ChargeTrackerLiveActivityIntent.swift in Sources */,
 				06CD00A92CF63C5E004DC7F6 /* ChargeTrackerModule.swift in Sources */,
+				0624A5FD2CF719C7009DB065 /* ChargeTrackerEventEmitter.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				0624A6072CF71C0C009DB065 /* ChargeTrackerEventEmitter.m in Sources */,
 				06CD00A62CF634DA004DC7F6 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -632,6 +647,7 @@
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
@@ -675,6 +691,7 @@
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;

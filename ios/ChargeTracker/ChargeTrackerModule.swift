@@ -47,18 +47,33 @@ class ChargeTrackerModule: NSObject {
  }
   
 
- static func getLiveActivity(for recordID: Int) -> Activity<ChargeTrackerAttributes>?{
-     Activity<ChargeTrackerAttributes>.activities.first(where: {$0.attributes.recordID == recordID})
- }
+   static func getLiveActivity(for recordID: Int) -> Activity<ChargeTrackerAttributes>?{
+       Activity<ChargeTrackerAttributes>.activities.first(where: {$0.attributes.recordID == recordID})
+   }
   
-// @objc
-// func isLiveActivityActive(_ callback: RCTResponseSenderBlock) {
-//   // Check if there's at least one active activity in the activities array
-//   let isActive = Activity<ChargeTrackerAttributes>.activities.contains { activity in
-//     return activity.activityState == .active
-//   }
-//   callback([isActive])
-// }
+  static func getCurrentContentState(forRecordID id: Int?) -> ChargeTrackerAttributes.ContentState?{
+      guard let recordID = id else {
+        return nil
+      }
+      guard let liveActivity = getLiveActivity(for: recordID) else{
+          return nil
+      }
+      if #available(iOS 16.2, *) {
+          return liveActivity.content.state
+      } else {
+          return liveActivity.contentState
+      }
+  }
+  
+  static func getCurrentAttributes(forRecordID id: Int?) -> ChargeTrackerAttributes?{
+      guard let recordID = id else {
+        return nil
+      }
+      guard let liveActivity = getLiveActivity(for: recordID) else{
+          return nil
+      }
+      return liveActivity.attributes;
+  }
 
   static func ObservePushTokenUpdates() {
      guard let liveActivity = getLiveActivity(for: RECORD_ID) else{
@@ -167,9 +182,8 @@ class ChargeTrackerModule: NSObject {
        }
  }
 
- //method exported to react native
- @objc
- func updateLiveActivity(_ percent: Double, chargeRate: Double,  recordId: Int) -> Void {
+ 
+ static func updateActivity(percent: Double, chargeRate: Double,  recordId: Int) -> Void {
    if (!ChargeTrackerModule.areActivitiesEnabled()) {
          // User disabled Live Activities for the app, nothing to do
          return
@@ -202,6 +216,16 @@ class ChargeTrackerModule: NSObject {
      print("Error updating Live Activity \(error.localizedDescription).")
    }
  }
+  
+  //method exported to react native
+  @objc
+  func updateLiveActivity(_ percent: Double, chargeRate: Double,  recordId: Int) -> Void {
+    ChargeTrackerModule.updateActivity(percent: percent, chargeRate: chargeRate, recordId: recordId)
+  }
+
+  static func updateLiveActivity(_ percent: Double, chargeRate: Double,  recordId: Int) -> Void {
+    updateActivity(percent: percent, chargeRate: chargeRate, recordId: recordId)
+  }
 
  @objc
  func stopLiveActivity(_ isImmediateDismissal: Bool, percent: Double, chargeRate: Double,  recordId: Int) -> Void {
@@ -234,4 +258,19 @@ class ChargeTrackerModule: NSObject {
 
    }
  }
+}
+
+@available(iOS 17.0,*)
+extension ChargeTrackerModule {
+  
+  @available(iOS 17.0,*)
+  static func showStopChargeView(recordID: Int){
+      guard let currentState = getCurrentContentState(forRecordID: recordID) else {
+          return
+      }
+      guard let currentAttributes = getCurrentAttributes(forRecordID: recordID) else {
+          return
+      }
+    updateActivity(percent: currentState.chargeInfo.percent, chargeRate: currentState.chargeInfo.chargeRate, recordId: recordID)
+  }
 }

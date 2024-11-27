@@ -56,7 +56,7 @@ struct ChargeTrackerLiveActivity: Widget {
 
 extension ChargeTrackerAttributes {
     fileprivate static var preview: ChargeTrackerAttributes {
-        ChargeTrackerAttributes(recordID: 1)
+      ChargeTrackerAttributes(recordID: 1, authToken: "123")
     }
 }
 

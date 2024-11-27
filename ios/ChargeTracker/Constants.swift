@@ -25,3 +25,7 @@ extension Color {
 var widgetUrl: String {
       return "livechatpoc://live-activity"
 }
+
+var addFundsWidgetURL: String {
+  return "livechatpoc://live-activity/add-funds"
+}

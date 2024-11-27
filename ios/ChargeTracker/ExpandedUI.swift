@@ -39,7 +39,7 @@ struct ExpandedUI: View {
 
         }
         if(isAtLeastIOS17_0) {
-          Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+          Button(intent: StopChargeIntent(recordID: recordID)) {
               VStack {
                 Text("Stop charge")
                     .font(.system(size: 15, weight: .bold))
@@ -52,19 +52,17 @@ struct ExpandedUI: View {
           }
           .buttonStyle(PlainButtonStyle())
           
-          Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-              VStack {
-                Text("Add Funds")
-                    .font(.system(size: 15, weight: .bold))
-                    .foregroundColor(buttonTextcolor)
-              }
-              .frame(maxWidth: .infinity)
-              .frame(height: 30)
-              .background(color)
-              .cornerRadius(25)
+          Link(destination: URL(string: addFundsWidgetURL)!) {
+            VStack {
+              Text("Add Funds")
+                  .font(.system(size: 15, weight: .bold))
+                  .foregroundColor(buttonTextcolor)
+            }
+            .frame(maxWidth: .infinity)
+            .frame(height: 30)
+            .background(color)
+            .cornerRadius(25)
           }
-          .buttonStyle(PlainButtonStyle())
-          
         }
       }
     }
