@@ -1,5 +1,6 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {
+  Platform,
   SafeAreaView,
   ScrollView,
   StatusBar,
@@ -10,20 +11,44 @@ import {
 } from 'react-native';
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
-
-import {NativeModules} from 'react-native';
-
-const ChargeTrackerModule = NativeModules.ChargeTrackerModule;
+import {ChargeTrackerEventEmitter, ChargeTrackerModule} from './NativeModule';
 
 function App(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
+
+  useEffect(() => {
+    const stopChargeSubscription = ChargeTrackerEventEmitter.addListener(
+      'onStopChargeInitiated',
+      () => {
+        console.log('Stop Charge Initiated from live activity');
+      },
+    );
+    return () => {
+      stopChargeSubscription.remove();
+    };
+  }, []);
+
+  const isLiveActivityActive = (): Promise<boolean> => {
+    return new Promise(resolve => {
+      if (Platform.OS === 'android') {
+        return resolve(false);
+      }
+      ChargeTrackerModule.isLiveActivityActive(value => {
+        return resolve(value);
+      });
+    });
+  };
 
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
 
-  const onStart = () => {
-    ChargeTrackerModule.startLiveActivity(10, 45, 'efer2bsdbbsw72');
+  const onStart = async () => {
+    const isLiveActivityAlreadyStarted = await isLiveActivityActive();
+    //start new live activity if its not started already.
+    if (!isLiveActivityAlreadyStarted) {
+      ChargeTrackerModule.startLiveActivity(10, 45, 'efer2bsdbbsw72');
+    }
   };
 
   const onUpdate = () => {

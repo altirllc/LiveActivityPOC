@@ -6,14 +6,6 @@ import Foundation
 struct ExpandedUI: View {
   
   @Environment(\.colorScheme) var colorScheme
-  
-    var isAtLeastIOS17_0: Bool {
-        if #available(iOS 17.0, *) {
-            return true
-        } else {
-            return false
-        }
-    }
 
     // Required arguments for the component
     var percent: Double
@@ -38,7 +30,7 @@ struct ExpandedUI: View {
             .foregroundColor(color)
 
         }
-        if(isAtLeastIOS17_0) {
+        if #available(iOS 17.0, *) {
           Button(intent: StopChargeIntent(recordID: recordID)) {
               VStack {
                 Text("Stop charge")

@@ -12,6 +12,9 @@
 		0624A5FB2CF6F78F009DB065 /* ChargeTrackerLiveActivityIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624A5F92CF6F78F009DB065 /* ChargeTrackerLiveActivityIntent.swift */; };
 		0624A5FD2CF719C7009DB065 /* ChargeTrackerEventEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624A5FC2CF719C7009DB065 /* ChargeTrackerEventEmitter.swift */; };
 		0624A6072CF71C0C009DB065 /* ChargeTrackerEventEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0624A6062CF71C0C009DB065 /* ChargeTrackerEventEmitter.m */; };
+		0624A60D2CF74AC0009DB065 /* ChargeTrackerEventEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624A5FC2CF719C7009DB065 /* ChargeTrackerEventEmitter.swift */; };
+		0624A60E2CF74CF0009DB065 /* ChargeTrackerLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CD00892CF5D68F004DC7F6 /* ChargeTrackerLiveActivity.swift */; };
+		0624A60F2CF74D3A009DB065 /* ChargeTrackerEventEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0624A6062CF71C0C009DB065 /* ChargeTrackerEventEmitter.m */; };
 		06CD00832CF5D68F004DC7F6 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06CD00822CF5D68F004DC7F6 /* WidgetKit.framework */; };
 		06CD00852CF5D68F004DC7F6 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06CD00842CF5D68F004DC7F6 /* SwiftUI.framework */; };
 		06CD00882CF5D68F004DC7F6 /* ChargeTrackerBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CD00872CF5D68F004DC7F6 /* ChargeTrackerBundle.swift */; };
@@ -29,11 +32,12 @@
 		06CD00A92CF63C5E004DC7F6 /* ChargeTrackerModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CD009F2CF61B0F004DC7F6 /* ChargeTrackerModule.swift */; };
 		06CD00AD2CF64315004DC7F6 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CD00AC2CF64315004DC7F6 /* NetworkService.swift */; };
 		06CD00AE2CF64364004DC7F6 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CD00AC2CF64315004DC7F6 /* NetworkService.swift */; };
-		0C80B921A6F3F58F76C31292 /* libPods-LiveActivityPOC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-LiveActivityPOC.a */; };
+		0E26B0C59BB78D7E55B46AA8 /* libPods-LiveActivityPOC-ChargeTrackerExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E758E2F4323CD500D3EC29 /* libPods-LiveActivityPOC-ChargeTrackerExtension.a */; };
+		0FF61731673C6F571D904EF1 /* libPods-LiveActivityPOC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E20E324663805FC4C35D02E8 /* libPods-LiveActivityPOC.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		7699B88040F8A987B510C191 /* libPods-LiveActivityPOC-LiveActivityPOCTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-LiveActivityPOC-LiveActivityPOCTests.a */; };
+		2AD0A73D297440CE1E7E2655 /* libPods-LiveActivityPOC-LiveActivityPOCTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4171A9680F7B12C1D39323D1 /* libPods-LiveActivityPOC-LiveActivityPOCTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -90,19 +94,22 @@
 		06CD00A22CF623BF004DC7F6 /* ChargeTrackerModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChargeTrackerModule.m; sourceTree = "<group>"; };
 		06CD00AB2CF63EB2004DC7F6 /* LiveActivityPOC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LiveActivityPOC-Bridging-Header.h"; sourceTree = "<group>"; };
 		06CD00AC2CF64315004DC7F6 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		076D91E0E2D42A9DB3AE168D /* Pods-LiveActivityPOC-LiveActivityPOCTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveActivityPOC-LiveActivityPOCTests.debug.xcconfig"; path = "Target Support Files/Pods-LiveActivityPOC-LiveActivityPOCTests/Pods-LiveActivityPOC-LiveActivityPOCTests.debug.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* LiveActivityPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveActivityPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = LiveActivityPOC/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = LiveActivityPOC/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = LiveActivityPOC/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = LiveActivityPOC/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = LiveActivityPOC/main.m; sourceTree = "<group>"; };
-		19F6CBCC0A4E27FBF8BF4A61 /* libPods-LiveActivityPOC-LiveActivityPOCTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LiveActivityPOC-LiveActivityPOCTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B4392A12AC88292D35C810B /* Pods-LiveActivityPOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveActivityPOC.debug.xcconfig"; path = "Target Support Files/Pods-LiveActivityPOC/Pods-LiveActivityPOC.debug.xcconfig"; sourceTree = "<group>"; };
-		5709B34CF0A7D63546082F79 /* Pods-LiveActivityPOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveActivityPOC.release.xcconfig"; path = "Target Support Files/Pods-LiveActivityPOC/Pods-LiveActivityPOC.release.xcconfig"; sourceTree = "<group>"; };
-		5B7EB9410499542E8C5724F5 /* Pods-LiveActivityPOC-LiveActivityPOCTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveActivityPOC-LiveActivityPOCTests.debug.xcconfig"; path = "Target Support Files/Pods-LiveActivityPOC-LiveActivityPOCTests/Pods-LiveActivityPOC-LiveActivityPOCTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5DCACB8F33CDC322A6C60F78 /* libPods-LiveActivityPOC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LiveActivityPOC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4171A9680F7B12C1D39323D1 /* libPods-LiveActivityPOC-LiveActivityPOCTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LiveActivityPOC-LiveActivityPOCTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = LiveActivityPOC/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		89C6BE57DB24E9ADA2F236DE /* Pods-LiveActivityPOC-LiveActivityPOCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveActivityPOC-LiveActivityPOCTests.release.xcconfig"; path = "Target Support Files/Pods-LiveActivityPOC-LiveActivityPOCTests/Pods-LiveActivityPOC-LiveActivityPOCTests.release.xcconfig"; sourceTree = "<group>"; };
+		858920E3BBA1B1A26DF94625 /* Pods-LiveActivityPOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveActivityPOC.debug.xcconfig"; path = "Target Support Files/Pods-LiveActivityPOC/Pods-LiveActivityPOC.debug.xcconfig"; sourceTree = "<group>"; };
+		ADA25A4C8E00A0738FE606F8 /* Pods-LiveActivityPOC-ChargeTrackerExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveActivityPOC-ChargeTrackerExtension.debug.xcconfig"; path = "Target Support Files/Pods-LiveActivityPOC-ChargeTrackerExtension/Pods-LiveActivityPOC-ChargeTrackerExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		C2046F3618FE4A3BE0C39C8F /* Pods-LiveActivityPOC-ChargeTrackerExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveActivityPOC-ChargeTrackerExtension.release.xcconfig"; path = "Target Support Files/Pods-LiveActivityPOC-ChargeTrackerExtension/Pods-LiveActivityPOC-ChargeTrackerExtension.release.xcconfig"; sourceTree = "<group>"; };
+		D8E758E2F4323CD500D3EC29 /* libPods-LiveActivityPOC-ChargeTrackerExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LiveActivityPOC-ChargeTrackerExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D94002E58B09123D6A786BA1 /* Pods-LiveActivityPOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveActivityPOC.release.xcconfig"; path = "Target Support Files/Pods-LiveActivityPOC/Pods-LiveActivityPOC.release.xcconfig"; sourceTree = "<group>"; };
+		E20E324663805FC4C35D02E8 /* libPods-LiveActivityPOC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LiveActivityPOC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC8300B9F8D85138E2A3BAC1 /* Pods-LiveActivityPOC-LiveActivityPOCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveActivityPOC-LiveActivityPOCTests.release.xcconfig"; path = "Target Support Files/Pods-LiveActivityPOC-LiveActivityPOCTests/Pods-LiveActivityPOC-LiveActivityPOCTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -111,7 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7699B88040F8A987B510C191 /* libPods-LiveActivityPOC-LiveActivityPOCTests.a in Frameworks */,
+				2AD0A73D297440CE1E7E2655 /* libPods-LiveActivityPOC-LiveActivityPOCTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +128,7 @@
 			files = (
 				06CD00852CF5D68F004DC7F6 /* SwiftUI.framework in Frameworks */,
 				06CD00832CF5D68F004DC7F6 /* WidgetKit.framework in Frameworks */,
+				0E26B0C59BB78D7E55B46AA8 /* libPods-LiveActivityPOC-ChargeTrackerExtension.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,7 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C80B921A6F3F58F76C31292 /* libPods-LiveActivityPOC.a in Frameworks */,
+				0FF61731673C6F571D904EF1 /* libPods-LiveActivityPOC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,7 +163,6 @@
 		06CD00862CF5D68F004DC7F6 /* ChargeTracker */ = {
 			isa = PBXGroup;
 			children = (
-				06CD00AB2CF63EB2004DC7F6 /* LiveActivityPOC-Bridging-Header.h */,
 				06CD00872CF5D68F004DC7F6 /* ChargeTrackerBundle.swift */,
 				06CD00892CF5D68F004DC7F6 /* ChargeTrackerLiveActivity.swift */,
 				06CD008D2CF5D690004DC7F6 /* Assets.xcassets */,
@@ -183,6 +190,7 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				06CD00AB2CF63EB2004DC7F6 /* LiveActivityPOC-Bridging-Header.h */,
 			);
 			name = LiveActivityPOC;
 			sourceTree = "<group>";
@@ -191,10 +199,11 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				5DCACB8F33CDC322A6C60F78 /* libPods-LiveActivityPOC.a */,
-				19F6CBCC0A4E27FBF8BF4A61 /* libPods-LiveActivityPOC-LiveActivityPOCTests.a */,
 				06CD00822CF5D68F004DC7F6 /* WidgetKit.framework */,
 				06CD00842CF5D68F004DC7F6 /* SwiftUI.framework */,
+				E20E324663805FC4C35D02E8 /* libPods-LiveActivityPOC.a */,
+				D8E758E2F4323CD500D3EC29 /* libPods-LiveActivityPOC-ChargeTrackerExtension.a */,
+				4171A9680F7B12C1D39323D1 /* libPods-LiveActivityPOC-LiveActivityPOCTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -235,10 +244,12 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3B4392A12AC88292D35C810B /* Pods-LiveActivityPOC.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-LiveActivityPOC.release.xcconfig */,
-				5B7EB9410499542E8C5724F5 /* Pods-LiveActivityPOC-LiveActivityPOCTests.debug.xcconfig */,
-				89C6BE57DB24E9ADA2F236DE /* Pods-LiveActivityPOC-LiveActivityPOCTests.release.xcconfig */,
+				858920E3BBA1B1A26DF94625 /* Pods-LiveActivityPOC.debug.xcconfig */,
+				D94002E58B09123D6A786BA1 /* Pods-LiveActivityPOC.release.xcconfig */,
+				ADA25A4C8E00A0738FE606F8 /* Pods-LiveActivityPOC-ChargeTrackerExtension.debug.xcconfig */,
+				C2046F3618FE4A3BE0C39C8F /* Pods-LiveActivityPOC-ChargeTrackerExtension.release.xcconfig */,
+				076D91E0E2D42A9DB3AE168D /* Pods-LiveActivityPOC-LiveActivityPOCTests.debug.xcconfig */,
+				EC8300B9F8D85138E2A3BAC1 /* Pods-LiveActivityPOC-LiveActivityPOCTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -250,12 +261,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "LiveActivityPOCTests" */;
 			buildPhases = (
-				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
+				0AEF6A3B99F85858719AD6B6 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */,
-				F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */,
+				9AA37C543659481C82657857 /* [CP] Embed Pods Frameworks */,
+				BC5EDDD3C7AEFCA9390E3BC3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -271,9 +282,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 06CD00962CF5D690004DC7F6 /* Build configuration list for PBXNativeTarget "ChargeTrackerExtension" */;
 			buildPhases = (
+				A61546649C7E5C53F3A0E1FD /* [CP] Check Pods Manifest.lock */,
 				06CD007D2CF5D68F004DC7F6 /* Sources */,
 				06CD007E2CF5D68F004DC7F6 /* Frameworks */,
 				06CD007F2CF5D68F004DC7F6 /* Resources */,
+				E8355A637487D65B78073D35 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -288,15 +301,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "LiveActivityPOC" */;
 			buildPhases = (
-				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
+				6190CEDC5738F4BEAD470BCF /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
-				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
 				06CD00932CF5D690004DC7F6 /* Embed Foundation Extensions */,
+				137BB5521A70EDDBD4CCE272 /* [CP] Embed Pods Frameworks */,
+				036F4277F493A6DC5C152D56 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -394,24 +407,24 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
+		036F4277F493A6DC5C152D56 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LiveActivityPOC/Pods-LiveActivityPOC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-LiveActivityPOC/Pods-LiveActivityPOC-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LiveActivityPOC/Pods-LiveActivityPOC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-LiveActivityPOC/Pods-LiveActivityPOC-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LiveActivityPOC/Pods-LiveActivityPOC-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LiveActivityPOC/Pods-LiveActivityPOC-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
+		0AEF6A3B99F85858719AD6B6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -433,7 +446,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
+		137BB5521A70EDDBD4CCE272 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LiveActivityPOC/Pods-LiveActivityPOC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LiveActivityPOC/Pods-LiveActivityPOC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LiveActivityPOC/Pods-LiveActivityPOC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6190CEDC5738F4BEAD470BCF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -455,7 +485,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */ = {
+		9AA37C543659481C82657857 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -472,24 +502,29 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LiveActivityPOC-LiveActivityPOCTests/Pods-LiveActivityPOC-LiveActivityPOCTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
+		A61546649C7E5C53F3A0E1FD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LiveActivityPOC/Pods-LiveActivityPOC-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LiveActivityPOC/Pods-LiveActivityPOC-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LiveActivityPOC-ChargeTrackerExtension-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LiveActivityPOC/Pods-LiveActivityPOC-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
+		BC5EDDD3C7AEFCA9390E3BC3 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -504,6 +539,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LiveActivityPOC-LiveActivityPOCTests/Pods-LiveActivityPOC-LiveActivityPOCTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8355A637487D65B78073D35 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LiveActivityPOC-ChargeTrackerExtension/Pods-LiveActivityPOC-ChargeTrackerExtension-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LiveActivityPOC-ChargeTrackerExtension/Pods-LiveActivityPOC-ChargeTrackerExtension-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LiveActivityPOC-ChargeTrackerExtension/Pods-LiveActivityPOC-ChargeTrackerExtension-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -542,9 +594,11 @@
 			files = (
 				06CD00882CF5D68F004DC7F6 /* ChargeTrackerBundle.swift in Sources */,
 				06CD00982CF5DABC004DC7F6 /* ChargeTrackerAttributes.swift in Sources */,
+				0624A60F2CF74D3A009DB065 /* ChargeTrackerEventEmitter.m in Sources */,
 				06CD00A12CF61B0F004DC7F6 /* ChargeTrackerModule.swift in Sources */,
 				06CD009D2CF606AE004DC7F6 /* ExpandedUI.swift in Sources */,
 				06CD008A2CF5D68F004DC7F6 /* ChargeTrackerLiveActivity.swift in Sources */,
+				0624A60D2CF74AC0009DB065 /* ChargeTrackerEventEmitter.swift in Sources */,
 				0624A5FB2CF6F78F009DB065 /* ChargeTrackerLiveActivityIntent.swift in Sources */,
 				06CD009B2CF6059F004DC7F6 /* Constants.swift in Sources */,
 				06CD00AE2CF64364004DC7F6 /* NetworkService.swift in Sources */,
@@ -556,6 +610,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06CD00A52CF634D7004DC7F6 /* ChargeTrackerAttributes.swift in Sources */,
+				0624A60E2CF74CF0009DB065 /* ChargeTrackerLiveActivity.swift in Sources */,
 				06CD00A32CF623BF004DC7F6 /* ChargeTrackerModule.m in Sources */,
 				06CD00AD2CF64315004DC7F6 /* NetworkService.swift in Sources */,
 				06CD00A82CF63C48004DC7F6 /* ExpandedUI.swift in Sources */,
@@ -587,7 +642,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-LiveActivityPOC-LiveActivityPOCTests.debug.xcconfig */;
+			baseConfigurationReference = 076D91E0E2D42A9DB3AE168D /* Pods-LiveActivityPOC-LiveActivityPOCTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -615,7 +670,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-LiveActivityPOC-LiveActivityPOCTests.release.xcconfig */;
+			baseConfigurationReference = EC8300B9F8D85138E2A3BAC1 /* Pods-LiveActivityPOC-LiveActivityPOCTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -640,6 +695,7 @@
 		};
 		06CD00942CF5D690004DC7F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADA25A4C8E00A0738FE606F8 /* Pods-LiveActivityPOC-ChargeTrackerExtension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -654,7 +710,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ChargeTracker/Info.plist;
@@ -675,8 +731,9 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/LiveActivityPOC-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -684,6 +741,7 @@
 		};
 		06CD00952CF5D690004DC7F6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2046F3618FE4A3BE0C39C8F /* Pods-LiveActivityPOC-ChargeTrackerExtension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -699,7 +757,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ChargeTracker/Info.plist;
@@ -719,7 +777,8 @@
 				SKIP_INSTALL = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/LiveActivityPOC-Bridging-Header.h";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -727,7 +786,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-LiveActivityPOC.debug.xcconfig */;
+			baseConfigurationReference = 858920E3BBA1B1A26DF94625 /* Pods-LiveActivityPOC.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -749,7 +808,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = LiveActivityPOC;
-				SWIFT_OBJC_BRIDGING_HEADER = "ChargeTracker/LiveActivityPOC-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/LiveActivityPOC-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
 				SWIFT_VERSION = 5.0;
@@ -759,7 +818,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-LiveActivityPOC.release.xcconfig */;
+			baseConfigurationReference = D94002E58B09123D6A786BA1 /* Pods-LiveActivityPOC.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -780,7 +839,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = LiveActivityPOC;
-				SWIFT_OBJC_BRIDGING_HEADER = "ChargeTracker/LiveActivityPOC-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/LiveActivityPOC-Bridging-Header.h";
 				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -857,7 +916,8 @@
 				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "ChargeTracker/LiveActivityPOC-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/LiveActivityPOC-Bridging-Header.h";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
 			};
 			name = Debug;
 		};
@@ -923,7 +983,8 @@
 				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "ChargeTracker/LiveActivityPOC-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/LiveActivityPOC-Bridging-Header.h";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

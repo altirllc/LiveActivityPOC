@@ -142,7 +142,15 @@ class ChargeTrackerModule: NSObject {
       }
    }
 
-
+  //method exported to react native
+  @objc
+  func isLiveActivityActive(_ callback: RCTResponseSenderBlock) {
+    // Check if there's at least one active activity in the activities array
+    let isActive = Activity<ChargeTrackerAttributes>.activities.contains { activity in
+      return activity.activityState == .active
+    }
+    callback([isActive])
+  }
 
  //method exported to react native
  @objc

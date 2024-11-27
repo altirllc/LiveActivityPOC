@@ -54,23 +54,23 @@ struct ChargeTrackerLiveActivity: Widget {
     }
 }
 
-extension ChargeTrackerAttributes {
-    fileprivate static var preview: ChargeTrackerAttributes {
-      ChargeTrackerAttributes(recordID: 1, authToken: "123")
-    }
-}
-
-extension ChargeTrackerAttributes.ContentState {
-  fileprivate static var sample: ChargeTrackerAttributes.ContentState {
-    let chargeInfo = ChargeTrackerAttributes.ContentState.ChargeInfo(
-         percent: 10, chargeRate: 20
-       )
-    return ChargeTrackerAttributes.ContentState(chargeInfo: chargeInfo)
-  }
-}
-
-#Preview("Notification", as: .content, using: ChargeTrackerAttributes.preview) {
-   ChargeTrackerLiveActivity()
-} contentStates: {
-    ChargeTrackerAttributes.ContentState.sample
-}
+//extension ChargeTrackerAttributes {
+//    fileprivate static var preview: ChargeTrackerAttributes {
+//      ChargeTrackerAttributes(recordID: 1, authToken: "123")
+//    }
+//}
+//
+//extension ChargeTrackerAttributes.ContentState {
+//  fileprivate static var sample: ChargeTrackerAttributes.ContentState {
+//    let chargeInfo = ChargeTrackerAttributes.ContentState.ChargeInfo(
+//         percent: 10, chargeRate: 20
+//       )
+//    return ChargeTrackerAttributes.ContentState(chargeInfo: chargeInfo)
+//  }
+//}
+//
+//#Preview("Notification", as: .content, using: ChargeTrackerAttributes.preview) {
+//   ChargeTrackerLiveActivity()
+//} contentStates: {
+//    ChargeTrackerAttributes.ContentState.sample
+//}

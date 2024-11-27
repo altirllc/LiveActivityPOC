@@ -29,6 +29,7 @@ public struct StopChargeIntent: LiveActivityIntent {
   
   public func perform() async throws -> some IntentResult {
     ChargeTrackerModule.showStopChargeView(recordID: recordID);
+    ChargeTrackerEventEmitter.emitter?.sendEvent(withName: "onStopChargeInitiated", body: nil)
     guard let currentAttributes = ChargeTrackerModule.getCurrentAttributes(forRecordID: recordID) else {
         return .result()
     }
@@ -42,7 +43,7 @@ public struct StopChargeIntent: LiveActivityIntent {
         httpBody = try JSONSerialization.data(withJSONObject: jsonBody)
     } catch {
         print("Error converting JSON to Data:", error)
-        return
+        return .result()
     }
 
     // Optional binding before calling the API
